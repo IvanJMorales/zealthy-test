@@ -8,7 +8,6 @@ import { getPageConfig } from "@/lib/auth";
 import AboutMe from "@/components/AboutMe";
 import Address from "@/components/Address";
 import Birthdate from "@/components/Birthdate";
-import { Step2Schema } from "@/utils/formValidations";
 
 
 const Step2 = () => {
@@ -65,7 +64,6 @@ const Step2 = () => {
                 birthdate: userData?.birthdate ?? "",
             }}
             onSubmit={handleSubmit}
-            validationSchema={Step2Schema}
             enableReinitialize
             
         >
