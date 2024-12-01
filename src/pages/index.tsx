@@ -77,7 +77,10 @@ const Home = () => {
                     <p className="p-5">Hello, {userData.email}</p>
 
                     <button
-                        onClick={() => router.push(`/step${userData.stepCompleted}`)}
+                        onClick={() => {
+                            const nextStep = Math.min(userData.stepCompleted + 1, 3);
+                            router.push(`/step${nextStep}`);
+                          }}
                         className="btn-primary bg-green-300 rounded p-2 m-2"
                     >
                         Continue the Application
