@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { db } from "../lib/firebase";
 import { doc, updateDoc, getDoc } from "firebase/firestore";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { Formik, Form, Field } from "formik";
+import { Formik, Form } from "formik";
 import { useEffect, useState } from "react";
 import { getPageConfig } from "@/lib/auth";
 import AboutMe from "@/components/AboutMe";

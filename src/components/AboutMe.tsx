@@ -1,5 +1,4 @@
-import { Field, Form, Formik, FormikErrors, FormikTouched } from "formik";
-import { AboutMeSchema } from "@/utils/formValidations";
+import { Field, FormikErrors, FormikTouched } from "formik";
 import { FC } from "react";
 
 interface AboutMeProps {
